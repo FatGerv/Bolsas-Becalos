@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abogada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2a3d66;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            padding: 0 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        figure {
+            text-align: center;
+            width: 200px; 
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        figcaption {
+            font-size: 14px;
+            color: #555;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        input[type="radio"] {
+            margin-top: 10px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #2a3d66;
+        }
+
+        button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 10px 0;
+            background-color: #2a3d66;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1f2b45;
+        }
+    </style>
+</head>
+<body>
+    <h1>El estilo de la abogada</h1>
+    <p>Bienvenida a este tu espacio seguro, para encontrar tus bolsas favs 🎀 para cualquier ocasión.</p>
+
+    <!-- Asegúrate de envolver todo en un formulario -->
+    <form action="https://formsubmit.co/noemi0101gervacio@gmail.com" method="POST">
+        <input 
+            type="text"
+            name="Nombre"
+            placeholder="Ingresa tu nombre"
+            required
+        />
+        <input 
+            type="text"
+            name="Apellido"
+            placeholder="Ingresa tu Apellido"
+            required
+        />
+        <input 
+            type="password"
+            name="Contraseña"
+            placeholder="Ingresa tu Contraseña"
+        />
+
+        <div class="image-container">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1613800813591-91cd09c5f39f?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9wYSUyMGVsZWdhbnRlfGVufDB8fDB8fHww" 
+                     alt="Una mujer bien vestida mirando hacia abajo">
+                <figcaption>Sientete única con el bolso que escojas</figcaption>
+            </figure>
+            <br>
+            <label>Bolso a escoger</label>
+            <br>
+
+            <!-- Primer bolso con su valor -->
+            <figure>
+                <img src="https://i.pinimg.com/474x/d3/39/2d/d3392de8455b478618d11340f55fbdae.jpg" 
+                     alt="Bolso con textura para tener un look envidiable">
+                <figcaption>Bolso con textura para tener un look envidiable $200.00 MXN</figcaption>
+                <input type="radio" name="bolso" id="bolso_2" value="SHEL">
+                <label for="bolso_2">SHEL</label>
+            </figure>
+
+            <!-- Segundo bolso con su valor -->
+            <figure>
+                <img src="https://i.pinimg.com/474x/b8/13/10/b81310e80576f23df4eed3b94b46d150.jpg" 
+                     alt="Bolso listo para ocasiones discretas">
+                <figcaption>Bolso listo para ocasiones discretas $300.00 MXN</figcaption>
+                <input type="radio" name="bolso" id="bolso_3" value="LIVE">
+                <label for="bolso_3">LIVE</label>
+            </figure>
+
+            <!-- Tercer bolso con su valor -->
+            <figure>
+                <img src="https://i.pinimg.com/474x/89/3a/7a/893a7adfd4b51452ec6566c3d33ac492.jpg" 
+                     alt="Bolso color blanco con adornos oro">
+                <figcaption>Bolso color blanco con adornos oro $250.00 MXN</figcaption>
+                <input type="radio" name="bolso" id="bolso_4" value="OLD">
+                <label for="bolso_4">OLD</label>
+            </figure>
+
+            <!-- Cuarto bolso con su valor -->
+            <figure>
+                <img src="https://i.pinimg.com/474x/59/70/2c/59702ce012afbe42dd9af8f003a7eac1.jpg" 
+                     alt="Bolso clásico, elegante y atemporal">
+                <figcaption>Bolso clásico, elegante y atemporal $150.00 MXN</figcaption>
+                <input type="radio" name="bolso" id="bolso_5" value="MONEY">
+                <label for="bolso_5">MONEY</label>
+            </figure>
+        </div>
+
+        <button type="submit">Enviar pedido</button>
+        <button type="reset">Resetear pedido</button>
+    </form>
+</body>
+</html>
